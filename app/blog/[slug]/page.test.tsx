@@ -9,7 +9,7 @@ it("App Router: Works with dynamic route segments", () => {
   render(<Page params={{ slug: "Test" }} />);
   expect(screen.getByRole("heading")).toHaveTextContent("Slug: Test");
 });
-if('HoleTex should be in the document', () =>{
+it('HoleTex should be in the document', () =>{
   render(<Page params ={{slug: 'Test'}} />);
   expect(screen.getByText('HoleTex')).toBeInTheDocument();
 })
